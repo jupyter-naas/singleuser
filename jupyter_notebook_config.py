@@ -7,7 +7,7 @@ import os
 import errno
 import stat
 
-os.system('python /home/secret/brain_runner.py')
+os.system('python -m naas.runner -d')
 
 c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
@@ -32,7 +32,7 @@ c.ServerProxy.servers = {
             'title': 'Naas manager',
         },
         'port': 5000,
-        'command': ['python3', '-m', 'naas.runner'],
+        'command': ['python', '-m', 'naas.runner'],
         'absolute_url': False
     }
 }

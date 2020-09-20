@@ -31,6 +31,8 @@ RUN python3 -m pip install --no-cache \
     ipywidgets \
     ipympl \
     jupyter-server-proxy \
+    naas \
+    naas-drivers \
     matplotlib && \
     jupyter labextension install --no-build \
     @elyra/python-editor-extension \
