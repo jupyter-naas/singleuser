@@ -22,14 +22,6 @@ c.NotebookApp.tornado_settings = {
     }
 }
 
-# c.LauncherShortcuts.shortcuts = {
-#     'Naas': {
-#         'title': 'Naas manager',
-#         'target': '{base_url}shiny/my-shiny-application-directory/',
-#         'icon_path': '/etc/jupyter/naas_logo.svg'
-#     }
-# }
-
 c.ServerProxy.servers = {
     'naas': {
         'launcher_entry': {
@@ -38,8 +30,6 @@ c.ServerProxy.servers = {
             'title': 'Naas manager',
         },
         'port': 5000,
-        # 'command': ['python', '-m', 'naas.runner'],
-        # 'absolute_url': False
     }
 }
 

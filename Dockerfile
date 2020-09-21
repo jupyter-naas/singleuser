@@ -43,7 +43,8 @@ RUN python3 -m pip install --no-cache \
     jupyter lab build
 
 COPY jupyter_notebook_config.py /etc/jupyter/
-COPY naas_logo.jpg /etc/jupyter/naas_logo.jpg
+COPY overrides.json /etc/jupyter/overrides.json
+COPY variables.css /etc/jupyter/variables.css
 
 # add system packages
 RUN apt-get update && \
