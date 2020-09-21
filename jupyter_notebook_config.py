@@ -1,4 +1,4 @@
-# Copyright (c) Jupyter Development Team.
+# Copyright (c) Naas Team.
 # Distributed under the terms of the Modified BSD License.
 
 from jupyter_core.paths import jupyter_data_dir
@@ -21,19 +21,25 @@ c.NotebookApp.tornado_settings = {
         'Content-Security-Policy': 'frame-ancestors self ' + os.environ.get('ALLOWED_IFRAME')
     }
 }
-# https://github.com/jupyter/notebook/issues/3130
-c.FileContentsManager.delete_to_trash = False
+
+# c.LauncherShortcuts.shortcuts = {
+#     'Naas': {
+#         'title': 'Naas manager',
+#         'target': '{base_url}shiny/my-shiny-application-directory/',
+#         'icon_path': '/etc/jupyter/naas_logo.svg'
+#     }
+# }
 
 c.ServerProxy.servers = {
     'naas': {
         'launcher_entry': {
             'enabled': True,
-            'icon_path': '/etc/jupyter/naas_logo.jpg',
+            'icon_path': '/etc/jupyter/naas_logo.svg',
             'title': 'Naas manager',
         },
         'port': 5000,
-        'command': ['python', '-m', 'naas.runner'],
-        'absolute_url': False
+        # 'command': ['python', '-m', 'naas.runner'],
+        # 'absolute_url': False
     }
 }
 
