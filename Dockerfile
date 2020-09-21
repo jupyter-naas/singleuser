@@ -30,13 +30,11 @@ RUN python3 -m pip install --no-cache \
     ipywidgets \
     ipympl \
     jupyter-server-proxy \
-    jupyter-launcher-shortcuts \
     naas \
     naas-drivers \
     matplotlib && \
     jupyter labextension install --no-build \
     @elyra/python-editor-extension \
-    jupyterlab-launcher-shortcuts \
     @jupyterlab/server-proxy \
     @jupyterlab/toc \
     jupyter-matplotlib \
