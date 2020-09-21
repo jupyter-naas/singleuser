@@ -1,10 +1,9 @@
-ARG DOCKER_NOTEBOOK_IMAGE
-FROM $DOCKER_NOTEBOOK_IMAGE
-ARG JUPYTERHUB_VERSION
-ARG JUPYTERLAB_VERSION
-ARG JUPYTERNBDIME_VERSION
-ARG JUPYTERCLIENT_VERSION
-ARG JUPYTERGIT_VERSION
+FROM jupyter/minimal-notebook:latest
+ENV JUPYTERHUB_VERSION=1.1.0
+ENV JUPYTERLAB_VERSION=2.2.4
+ENV JUPYTERNBDIME_VERSION=2.0.0
+ENV JUPYTERCLIENT_VERSION=6.1.6
+ENV JUPYTERGIT_VERSION=0.20.0
 ENV NB_UMASK=022
 ENV NB_USER=ftp
 ENV NB_UID=21
@@ -48,7 +47,6 @@ RUN python3 -m pip install --no-cache \
 COPY jupyter_notebook_config.py /etc/jupyter/
 COPY naas_logo.jpg /etc/jupyter/naas_logo.jpg
 
-# add brain system 
-RUN chmod -R +x /home/secret/ && \
-    apt-get update && \
+# add system packages
+RUN apt-get update && \
     apt-get -y install tzdata tesseract-ocr libtesseract-dev
