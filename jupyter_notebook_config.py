@@ -7,7 +7,7 @@ import os
 import errno
 import stat
 
-os.system('python -m naas.runner -d')
+# os.system('python -m naas.runner -d')
 
 c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
@@ -29,7 +29,7 @@ c.ServerProxy.servers = {
             'icon_path': '/etc/jupyter/naas_logo.svg',
             'title': 'Naas manager',
         },
-        'command': [],
+        'command': ["python", "-m", "naas.runner", "-d"],
         'port': 5000,
     }
 }
