@@ -29,7 +29,7 @@ c.ServerProxy.servers = {
             'icon_path': '/etc/jupyter/naas_logo.svg',
             'title': 'Naas manager',
         },
-        'command': ["python", "-m", "naas.runner", "-d"],
+        'command': ["python", "-m", "naas.runner"],
         'port': 5000,
     }
 }
