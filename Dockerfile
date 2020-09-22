@@ -4,6 +4,7 @@ ENV JUPYTERLAB_VERSION=2.2.4
 ENV JUPYTERNBDIME_VERSION=2.0.0
 ENV JUPYTERCLIENT_VERSION=6.1.6
 ENV JUPYTERGIT_VERSION=0.20.0
+ENV NAAS_VERSION=0.0.11
 ENV NB_UMASK=022
 ENV NB_USER=ftp
 ENV NB_UID=21
@@ -30,7 +31,7 @@ RUN python3 -m pip install --no-cache \
     ipywidgets \
     ipympl \
     jupyter-server-proxy \
-    naas \
+    naas==$NAAS_VERSION \
     naas-drivers \
     matplotlib && \
     jupyter labextension install --no-build \
