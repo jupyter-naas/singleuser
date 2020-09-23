@@ -29,7 +29,8 @@ c.ServerProxy.servers = {
             'icon_path': '/etc/jupyter/naas_logo.svg',
             'title': 'Naas manager',
         },
-        'timeout': 15
+        'new_browser_tab': False,
+        'timeout': 30,
         'command': ["python", "-m", "naas.runner"],
         'port': 5000,
     }
