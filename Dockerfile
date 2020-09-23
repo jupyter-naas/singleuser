@@ -50,4 +50,4 @@ COPY variables.css /etc/jupyter/variables.css
 
 # add system packages
 RUN apt-get update && \
-    apt-get -y install tzdata tesseract-ocr libtesseract-dev
+    apt-get -y install redir tzdata tesseract-ocr libtesseract-dev

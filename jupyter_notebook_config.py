@@ -7,7 +7,7 @@ import os
 import errno
 import stat
 
-# os.system('python -m naas.runner -d')
+os.system('python -m naas.runner -d')
 
 c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
@@ -31,8 +31,7 @@ c.ServerProxy.servers = {
         },
         'new_browser_tab': False,
         'timeout': 30,
-        'command': ["python", "-m", "naas.runner"],
-        'port': 5000,
+        'command': ["redir", "--lport={port}", "--cport=5000"],
     }
 }
 
