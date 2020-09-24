@@ -1,10 +1,9 @@
 FROM jupyter/minimal-notebook:latest
-ENV JUPYTERHUB_VERSION=1.1.0
-ENV JUPYTERLAB_VERSION=2.2.4
+ENV JUPYTERHUB_VERSION=1.2.0
+ENV JUPYTERLAB_VERSION=2.2.8
 ENV JUPYTERNBDIME_VERSION=2.0.0
 ENV JUPYTERCLIENT_VERSION=6.1.6
 ENV JUPYTERGIT_VERSION=0.20.0
-ENV NAAS_VERSION=0.0.13
 ENV NB_UMASK=022
 ENV NB_USER=ftp
 ENV NB_UID=21
@@ -31,8 +30,6 @@ RUN python3 -m pip install --no-cache \
     ipywidgets \
     ipympl \
     jupyter-server-proxy \
-    naas==$NAAS_VERSION \
-    naas-drivers \
     matplotlib && \
     jupyter labextension install --no-build \
     @elyra/python-editor-extension \
