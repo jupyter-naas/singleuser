@@ -45,6 +45,7 @@ RUN python3 -m pip install --no-cache \
 COPY jupyter_notebook_config.py /etc/jupyter/
 COPY overrides.json /etc/jupyter/overrides.json
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
+COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY variables.css /etc/jupyter/variables.css
 
 # add system packages
