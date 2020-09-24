@@ -33,7 +33,7 @@ RUN python3 -m pip install --no-cache \
     jupyter-launcher-shortcuts \
     matplotlib && \
     jupyter labextension install --no-build \
-    jupyter-launcher-shortcuts \
+    jupyterlab-launcher-shortcuts \
     @elyra/python-editor-extension \
     @jupyterlab/server-proxy \
     @jupyterlab/toc \
