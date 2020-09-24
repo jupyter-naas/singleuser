@@ -22,8 +22,6 @@ c.NotebookApp.tornado_settings = {
     }
 }
 
-c.JupyterHub.logo_file = "/etc/jupyter/naas_logo.svg"
-
 c.ServerProxy.servers = {
     'naas': {
         'launcher_entry': {
