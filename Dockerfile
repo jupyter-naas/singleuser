@@ -17,7 +17,7 @@ RUN mkdir /home/$NB_USER && \
     mkdir /home/$NB_USER/ftp && \
     fix-permissions /home/$NB_USER
 
-RUN python3 -m pip install --no-cache \
+RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyterhub==$JUPYTERHUB_VERSION \
     jupyterlab==$JUPYTERLAB_VERSION  \
     jupyter_client==$JUPYTERCLIENT_VERSION  \
@@ -42,7 +42,7 @@ RUN python3 -m pip install --no-cache \
     jupyterlab-plotly && \
     jupyter lab build
 
-COPY jupyter_notebook_config.py /etc/jupyter/
+COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY overrides.json /etc/jupyter/overrides.json
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
