@@ -26,7 +26,7 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     nbformat \
     nbconvert \
     nbresuse \
-    ipyparallel \ 
+    ipyparallel \
     ipywidgets \
     ipympl \
     jupyter-server-proxy \
@@ -40,13 +40,14 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyter-matplotlib \
     @jupyter-widgets/jupyterlab-manager \
     jupyterlab-plotly && \
-    jupyter lab build
+    jupyter lab build --name="naas"
 
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY overrides.json /etc/jupyter/overrides.json
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY variables.css /etc/jupyter/variables.css
+COPY naas-fav.png /lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
 
 # add system packages
 RUN apt-get update && \
