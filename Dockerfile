@@ -13,6 +13,8 @@ ENV PYTHONPATH=/home/pylib
 ENV TZ Europe/Paris
 USER root
 
+ENV VERSION 1.0.0
+
 RUN mkdir /home/$NB_USER && \
     mkdir /home/$NB_USER/ftp && \
     fix-permissions /home/$NB_USER
