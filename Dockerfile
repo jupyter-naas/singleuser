@@ -19,6 +19,7 @@ RUN mkdir /home/$NB_USER && \
     mkdir /home/$NB_USER/ftp && \
     fix-permissions /home/$NB_USER
 
+RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyterhub==$JUPYTERHUB_VERSION \
     jupyterlab==$JUPYTERLAB_VERSION  \
