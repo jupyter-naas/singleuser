@@ -47,7 +47,7 @@ COPY overrides.json /etc/jupyter/overrides.json
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY variables.css /etc/jupyter/variables.css
-COPY naas-fav.png /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
+COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
 
 # add system packages
 RUN apt-get update && \
