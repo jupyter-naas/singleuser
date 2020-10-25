@@ -40,7 +40,7 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyter-matplotlib \
     @jupyter-widgets/jupyterlab-manager \
     jupyterlab-plotly && \
-    jupyter lab build --name="naas"
+    jupyter lab build --name="Naas"
 
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY overrides.json /etc/jupyter/overrides.json
