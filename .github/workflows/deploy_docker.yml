@@ -52,6 +52,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          repository: jupyter-naas/naas
+          repository: jupyter-naas/drivers
           event-type: pypip-deployed
           client-payload: '{"ref": "${{ github.event.client_payload.ref }}"}'
