@@ -1,8 +1,9 @@
 name: Build Docker Image
 
 on:
-  repository_dispatch:
-    types: [pypip-deployed]
+  push:
+    tags:
+      - '*'
       
 jobs:
   deploy:
