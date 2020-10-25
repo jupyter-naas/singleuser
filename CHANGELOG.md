@@ -1,3 +1,9 @@
+## 1.1.4 (2020-10-25)
+
+### Fix
+
+- remove useless version file
+
 ## 1.1.3 (2020-10-25)
 
 ### Fix
