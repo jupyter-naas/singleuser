@@ -1,3 +1,9 @@
+## 1.3.3 (2020-10-27)
+
+### Fix
+
+- remove bugged update dockerhub description
+
 ## 1.3.2 (2020-10-27)
 
 ### Fix
