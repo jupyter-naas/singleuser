@@ -51,7 +51,7 @@ COPY custom.css /etc/jupyter/custom.css
 COPY variables.css /etc/jupyter/variables.css
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
-RUN cat /etc/jupyter/variables.css >> /opt/conda/share/jupyter/lab/themes/\@jupyterlab/theme-light-extension/index.css
+RUN cat /etc/jupyter/variables.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
 # add system packages
 RUN apt-get update && \
     apt-get -y install redir tzdata tesseract-ocr libtesseract-dev libcairo2-dev
