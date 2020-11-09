@@ -12,7 +12,7 @@ ENV NB_GROUP=21
 ENV PYTHONPATH=/home/pylib
 ENV TZ Europe/Paris
 USER root
-ENV VERSION 1.3.10
+ENV VERSION 2.0.0
 
 RUN mkdir /home/$NB_USER && \
     mkdir /home/$NB_USER/ftp && \
