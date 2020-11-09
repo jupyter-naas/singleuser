@@ -35,6 +35,7 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     matplotlib && \
     jupyter labextension install --no-build \
     # jupyterlab-launcher-shortcuts \
+    jupyterlab-execute-time \
     @elyra/python-editor-extension \
     @jupyterlab/server-proxy \
     @jupyterlab/toc \
