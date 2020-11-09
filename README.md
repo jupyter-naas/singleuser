@@ -1,2 +1,2 @@
 # singleuser
-🕵️‍♂️Jupyter-singleuser docker image with Naas secret sauce
+🕵️‍♂️ Jupyter-singleuser docker image with Naas secret sauce
