@@ -46,7 +46,7 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyter lab build --name="Naas"
 
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
-# COPY overrides.json /etc/jupyter/overrides.json
+COPY overrides.json /etc/jupyter/overrides.json
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY custom.css /etc/jupyter/custom.css
