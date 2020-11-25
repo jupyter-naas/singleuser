@@ -22,6 +22,14 @@ c.NotebookApp.tornado_settings = {
     }
 }
 
+c.LauncherShortcuts.shortcuts = {
+    'Naas': {
+        'title': 'Manager',
+        'target': '{base_url}naas/',
+        'icon_path': '/etc/jupyter/naas_logo.svg',
+    }
+}
+
 c.ServerProxy.servers = {
     'naas': {
         'launcher_entry': {
