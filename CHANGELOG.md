@@ -1,3 +1,13 @@
+## 2.1.2b1 (2020-11-25)
+
+### Fix
+
+- name manager shortcut
+
+### Feat
+
+- use LauncherShortcuts
+
 ## 2.1.2b0 (2020-11-17)
 
 ## 2.1.2 (2020-11-10)
