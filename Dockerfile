@@ -56,3 +56,7 @@ RUN cat /etc/jupyter/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterl
 # add system packages
 RUN apt-get update && \
     apt-get -y install redir tzdata tesseract-ocr libtesseract-dev libcairo2-dev
+
+RUN sed -i '6 i\export KERNEL_JUPYTER_SERVER_ROOT=${JUPYTER_SERVER_ROOT}' /usr/local/bin/start-notebook.sh
+RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin/start-notebook.sh
+RUN sed -i '6 i\export KERNEL_JUPYTERHUB_API_TOKEN=${JUPYTERHUB_API_TOKEN}' /usr/local/bin/start-notebook.sh
