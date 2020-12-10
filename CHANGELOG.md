@@ -1,3 +1,14 @@
+## 2.1.2b2 (2020-12-10)
+
+### Feat
+
+- Export KERNEL_ variables
+- use LauncherShortcuts
+
+### Fix
+
+- name manager shortcut
+
 ## 2.1.2b1 (2020-11-25)
 
 ### Fix
