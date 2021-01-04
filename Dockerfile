@@ -45,17 +45,18 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyterlab-plotly && \
     jupyter lab build --name="Naas"
 
-COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
-COPY overrides.json /etc/jupyter/overrides.json
-COPY naas_logo.svg /etc/jupyter/naas_logo.svg
-COPY naas_fav.svg /etc/jupyter/naas_fav.svg
-COPY custom.css /etc/jupyter/custom.css
-COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
-COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
-RUN cat /etc/jupyter/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
 # add system packages
 RUN apt-get update && \
     apt-get -y install redir tzdata tesseract-ocr libtesseract-dev libcairo2-dev
+
+COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
+COPY naas_logo.svg /etc/jupyter/naas_logo.svg
+COPY naas_fav.svg /etc/jupyter/naas_fav.svg
+COPY custom.css /etc/jupyter/custom.css
+COPY overrides.json opt/conda/share/jupyter/lab/settings/overrides.json
+COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
+COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
+RUN cat /etc/jupyter/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
 
 RUN sed -i '6 i\export KERNEL_JUPYTER_SERVER_ROOT=${JUPYTER_SERVER_ROOT}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin/start-notebook.sh
