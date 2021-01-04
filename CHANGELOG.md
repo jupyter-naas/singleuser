@@ -1,3 +1,20 @@
+## 2.1.2b3 (2021-01-04)
+
+### Fix
+
+- ovverride config
+
+## 2.1.2b2 (2020-12-10)
+
+### Feat
+
+- Export KERNEL_ variables
+- use LauncherShortcuts
+
+### Fix
+
+- name manager shortcut
+
 ## 2.1.2b2 (2020-12-10)
 
 ### Feat
