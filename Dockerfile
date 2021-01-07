@@ -43,7 +43,7 @@ RUN python3 -m pip install --use-feature=2020-resolver --no-cache \
     jupyter-matplotlib \
     @jupyter-widgets/jupyterlab-manager \
     jupyterlab-plotly && \
-    NODE_OPTIONS=--max_old_space_size=4096 jupyter lab build --name="Naas"
+    NODE_OPTIONS=--max_old_space_size=6596 jupyter lab build --name="Naas"
 
 # add system packages
 RUN apt-get update && \
