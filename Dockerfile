@@ -42,8 +42,9 @@ RUN python3 -m pip install --no-cache \
     @jupyterlab/toc \
     jupyter-matplotlib \
     @jupyter-widgets/jupyterlab-manager \
-    jupyterlab-plotly && \
-    NODE_OPTIONS=--max_old_space_size=6596 jupyter lab build --name="Naas"
+    jupyterlab-plotly
+
+RUN NODE_OPTIONS=--max_old_space_size=6596 jupyter lab build --name="Naas"
 
 # add system packages
 RUN apt-get update && \
