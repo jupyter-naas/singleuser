@@ -25,13 +25,13 @@ c.ServerApp.tornado_settings = {
     }
 }
 
-c.LauncherShortcuts.shortcuts = {
-    'naas_manager': {
-        'title': 'Naas Manager',
-        'target': '{base_url}naas/',
-        'icon_path': '/etc/jupyter/naas_logo.svg',
-    }
-}
+# c.LauncherShortcuts.shortcuts = {
+#     'naas_manager': {
+#         'title': 'Naas Manager',
+#         'target': '{base_url}naas/',
+#         'icon_path': '/etc/jupyter/naas_logo.svg',
+#     }
+# }
 
 c.ServerProxy.servers = {
     'naas': {
