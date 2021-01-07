@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:latest
 ENV JUPYTERHUB_VERSION=1.3.0
-ENV JUPYTERLAB_VERSION=3.0.0
+ENV JUPYTERLAB_VERSION=2.2.9
 ENV JUPYTERNBDIME_VERSION=2.1.0
 ENV JUPYTERCLIENT_VERSION=6.1.7
 ENV JUPYTERGIT_VERSION=0.23.3
@@ -50,7 +50,7 @@ RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --name="Naas" --dev
 RUN apt-get update && \
     apt-get -y install redir tzdata tesseract-ocr libtesseract-dev libcairo2-dev
 
-COPY jupyter_server_config.py /etc/jupyter/jupyter_server_config.py
+COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY custom.css /etc/jupyter/custom.css
