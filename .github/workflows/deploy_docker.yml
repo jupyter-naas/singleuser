@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
           token: '${{ secrets.PERSONAL_ACCESS_TOKEN }}'
-      - run: echo ${{ github.event.client_payload.ref }}
+      - run: echo ${{ github.ref }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -32,7 +32,7 @@ jobs:
         id: prepare
         uses: jupyter-naas/docker-smart-tag-action@1.0.0
         with:
-          ref: ${{ github.event.client_payload.ref }}
+          ref: ${{ github.ref }}
           docker_image: jupyternaas/singleuser
       - name: Build and push
         id: docker_build
@@ -48,4 +48,4 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repository: jupyter-naas/naas
           event-type: pypip-deployed
-          client-payload: '{"ref": "${{ github.event.client_payload.ref }}"}'
+          client-payload: '{"ref": "${{ github.ref }}"}'
