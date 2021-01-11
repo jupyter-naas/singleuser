@@ -1,3 +1,100 @@
+## 2.1.2b17 (2021-01-11)
+
+### Fix
+
+- deploy ci script
+
+## 2.1.2b16 (2021-01-11)
+
+## 2.1.2b15 (2021-01-07)
+
+### Fix
+
+- try old version without plugin shortcut
+
+## 2.1.2b14 (2021-01-07)
+
+### Fix
+
+- remove shortcut for now
+
+## 2.1.2b13 (2021-01-07)
+
+### Fix
+
+- try jupyter version 3
+
+## 2.1.2b12 (2021-01-07)
+
+### Fix
+
+- better nodejs limit
+
+## 2.1.2b11 (2021-01-07)
+
+### Fix
+
+- try to don't minimize
+
+## 2.1.2b10 (2021-01-07)
+
+### Fix
+
+- split run to fin error easily
+
+## 2.1.2b9 (2021-01-07)
+
+### Fix
+
+- remove useless pip flag
+
+## 2.1.2b8 (2021-01-07)
+
+### Fix
+
+- nodejs build size
+
+## 2.1.2b7 (2021-01-07)
+
+### Fix
+
+- nodejs build
+
+## 2.1.2b6 (2021-01-07)
+
+### Fix
+
+- version number jup client
+
+## 2.1.2b5 (2021-01-07)
+
+### Fix
+
+- version jupyter
+
+## 2.1.2b4 (2021-01-05)
+
+### Fix
+
+- jupyterlab build
+
+## 2.1.2b3 (2021-01-04)
+
+### Fix
+
+- ovverride config
+
+## 2.1.2b2 (2020-12-10)
+
+### Feat
+
+- Export KERNEL_ variables
+- use LauncherShortcuts
+
+### Fix
+
+- name manager shortcut
+
 ## 2.1.2b16 (2021-01-11)
 
 ## 2.1.2b15 (2021-01-07)
