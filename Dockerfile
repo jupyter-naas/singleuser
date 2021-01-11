@@ -30,18 +30,18 @@ RUN python3 -m pip install --no-cache \
     nbresuse \
     ipyparallel \
     ipywidgets \
-    ipympl \
+    ipympl==0.5.8 \
     jupyter-server-proxy \
     # jupyter-launcher-shortcuts \
-    matplotlib && \
+    matplotlib==3.3.1 && \
     jupyter labextension install --no-build \
     # jupyterlab-launcher-shortcuts \
     jupyterlab-execute-time \
     @elyra/python-editor-extension \
     @jupyterlab/server-proxy \
     @jupyterlab/toc \
-    jupyter-matplotlib \
-    @jupyter-widgets/jupyterlab-manager \
+    jupyter-matplotlib@0.7.4 \
+    @jupyter-widgets/jupyterlab-manager@2.0 \
     jupyterlab-plotly
 
 RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --name="Naas" --dev-build=False --minimize=False
