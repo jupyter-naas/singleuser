@@ -10,16 +10,16 @@ import stat
 os.system('python -m naas.runner &')
 
 c = get_config()
-c.NotebookApp.ip = '0.0.0.0'
-c.NotebookApp.port = 8888
-c.NotebookApp.default_url = '/lab'
+c.ServerApp.ip = '0.0.0.0'
+c.ServerApp.port = 8888
+c.ServerApp.default_url = '/lab'
 
 # c.LabBuildApp.minimize = False
 # c.LabBuildApp.dev_build = False
 
-c.NotebookApp.webbrowser_open_new = 0
+c.ServerApp.webbrowser_open_new = 0
 
-c.NotebookApp.tornado_settings = {
+c.ServerApp.tornado_settings = {
     'headers': {
         'Content-Security-Policy': 'frame-ancestors self ' + os.environ.get('ALLOWED_IFRAME')
     }
@@ -79,7 +79,7 @@ distinguished_name = req_distinguished_name
                            '-out', pem_file])
     # Restrict access to the file
     os.chmod(pem_file, stat.S_IRUSR | stat.S_IWUSR)
-    c.NotebookApp.certfile = pem_file
+    c.ServerApp.certfile = pem_file
 
 # Change default umask for all subprocesses of the notebook server if set in
 # the environment
