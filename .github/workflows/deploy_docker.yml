@@ -45,14 +45,14 @@ jobs:
       - name: release kind
         id: release_kind
         run: |
-          if [$REF == *"b"*]
+          if [[ $REF == *"b"* ]]
           then
               echo "::set-output name=release::dev"
           else
               echo "::set-output name=release::main"
           fi
         env:
-          REF: ${{ steps.prepare.outputs.tag }}
+          REF: ${{ github.ref }}
       - name: release kind
         run: echo ${{ steps.release_kind.outputs.release }}
       - name: Repository Dispatch
