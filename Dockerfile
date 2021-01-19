@@ -52,9 +52,10 @@ RUN apt-get update && \
 
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
+COPY naas_logo_n.ico /etc/jupyter/naas_logo_n.ico
 COPY naas_fav.svg /etc/jupyter/naas_fav.svg
 COPY custom.css /etc/jupyter/custom.css
-COPY overrides.json opt/conda/share/jupyter/lab/settings/overrides.json
+COPY overrides.json /opt/conda/share/jupyter/lab/settings/overrides.json
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
 RUN cat /etc/jupyter/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
