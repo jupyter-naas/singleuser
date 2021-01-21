@@ -1,3 +1,9 @@
+## 2.1.4 (2021-01-21)
+
+### Fix
+
+- reactive jupyter-launcher-shortcuts
+
 ## 2.1.3 (2021-01-19)
 
 ### Fix
