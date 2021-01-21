@@ -32,10 +32,10 @@ RUN python3 -m pip install --no-cache \
     ipywidgets \
     ipympl==0.5.8 \
     jupyter-server-proxy \
-    # jupyter-launcher-shortcuts \
+    jupyter-launcher-shortcuts \
     matplotlib==3.3.1 && \
     jupyter labextension install --no-build \
-    # jupyterlab-launcher-shortcuts \
+    jupyterlab-launcher-shortcuts \
     jupyterlab-execute-time \
     @elyra/python-editor-extension \
     @jupyterlab/server-proxy \
