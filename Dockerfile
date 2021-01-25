@@ -49,7 +49,7 @@ RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --name="Naas" --dev
 
 # add system packages
 RUN apt-get update && \
-    apt-get -y install redir tzdata tesseract-ocr libtesseract-dev libcairo2-dev
+    apt-get -y install redir wkhtmltopdf tzdata tesseract-ocr libtesseract-dev libcairo2-dev
 
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY naas_logo.svg /etc/jupyter/naas_logo.svg
