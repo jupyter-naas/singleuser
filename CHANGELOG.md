@@ -1,3 +1,9 @@
+## 2.3.0 (2021-01-25)
+
+### Feat
+
+- add wkhtmltopdf to build
+
 ## 2.2.0 (2021-01-25)
 
 ### Feat
