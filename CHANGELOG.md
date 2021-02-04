@@ -1,3 +1,9 @@
+## 2.3.1 (2021-02-04)
+
+### Fix
+
+- error when missing env var
+
 ## 2.3.0 (2021-01-25)
 
 ### Feat
