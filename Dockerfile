@@ -15,7 +15,6 @@ USER root
 ENV VERSION 2.0.1
 
 RUN mkdir /home/$NB_USER && \
-    mkdir /home/$NB_USER/ftp && \
     fix-permissions /home/$NB_USER
 
 RUN python3 -m pip install --upgrade pip
