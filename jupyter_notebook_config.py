@@ -21,7 +21,7 @@ c.NotebookApp.webbrowser_open_new = 0
 
 c.NotebookApp.tornado_settings = {
     'headers': {
-        'Content-Security-Policy': 'frame-ancestors self ' + os.environ.get('ALLOWED_IFRAME')
+        'Content-Security-Policy': 'frame-ancestors self ' + os.environ.get('ALLOWED_IFRAME', '')
     }
 }
 
