@@ -7,8 +7,6 @@ import os
 import errno
 import stat
 
-os.system('python -m naas.runner &')
-
 c = get_config()
 c.ServerApp.ip = '0.0.0.0'
 c.ServerApp.port = 8888
