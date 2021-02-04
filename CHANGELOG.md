@@ -1,3 +1,9 @@
+## 2.3.3 (2021-02-04)
+
+### Fix
+
+- remove naas from singleuser
+
 ## 2.3.2 (2021-02-04)
 
 ### Fix
