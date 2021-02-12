@@ -34,6 +34,7 @@ RUN python3 -m pip install --no-cache \
     jupyter-launcher-shortcuts \
     matplotlib==3.3.1 && \
     jupyter labextension install --no-build \
+    @parente/jupyterlab-quickopen@0.5 \
     spreadsheet-editor \
     jupyterlab-launcher-shortcuts \
     jupyterlab-execute-time \
@@ -44,21 +45,36 @@ RUN python3 -m pip install --no-cache \
     @jupyter-widgets/jupyterlab-manager@2.0 \
     jupyterlab-plotly
 
+    # @parente/jupyterlab-quickopen@0.5 \ # >= 1.0.0 requires JupyterLab 3.x
+    # spreadsheet-editor \ # open issue on v3
+    # jupyterlab-launcher-shortcuts \ # need to work on it
+    # jupyterlab-execute-time \ # updated for v3
+    # @elyra/python-editor-extension \ # >= 2.0.0 requires JupyterLab 3.x
+    # @jupyterlab/server-proxy \ # updated for v3
+    # @jupyterlab/toc \ # have been added to core jupyter 3  remove it 
+    # jupyter-matplotlib@0.7.4 \ # work but still a bit buggy
+    # @jupyter-widgets/jupyterlab-manager@2.0 \ change to pip install jupyterlab_widgets
+    # jupyterlab-plotly
+
 RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --name="Naas" --dev-build=False
 
 # add system packages
 RUN apt-get update && \
     apt-get -y install redir wkhtmltopdf tzdata tesseract-ocr libtesseract-dev libcairo2-dev
 
+RUN git config --global credential.helper store #Auto save git credentials
+
+RUN mkdir /etc/naas
+COPY jupyter_notebook_config.py /etc/naas/jupyter_notebook_config.py
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
-COPY naas_logo.svg /etc/jupyter/naas_logo.svg
-COPY naas_logo_n.ico /etc/jupyter/naas_logo_n.ico
-COPY naas_fav.svg /etc/jupyter/naas_fav.svg
-COPY custom.css /etc/jupyter/custom.css
+COPY naas_logo.svg /etc/naas/naas_logo.svg
+COPY naas_logo_n.ico /etc/naas/naas_logo_n.ico
+COPY naas_fav.svg /etc/naas/naas_fav.svg
+COPY custom.css /etc/naas/custom.css
 COPY overrides.json /opt/conda/share/jupyter/lab/settings/overrides.json
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
 COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
-RUN cat /etc/jupyter/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
+RUN cat /etc/naas/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
 
 RUN sed -i '6 i\export KERNEL_JUPYTER_SERVER_ROOT=${JUPYTER_SERVER_ROOT}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin/start-notebook.sh

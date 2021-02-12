@@ -19,7 +19,7 @@ c.ServerApp.webbrowser_open_new = 0
 
 c.ServerApp.tornado_settings = {
     'headers': {
-        'Content-Security-Policy': 'frame-ancestors self ' + os.environ.get('ALLOWED_IFRAME')
+        'Content-Security-Policy': f"frame-ancestors self {os.environ.get('ALLOWED_IFRAME')}"
     }
 }
 
@@ -35,7 +35,7 @@ c.ServerProxy.servers = {
     'naas': {
         'launcher_entry': {
             'enabled': True,
-            'icon_path': '/etc/jupyter/naas_logo.svg',
+            'icon_path': '/etc/naas/naas_logo.svg',
             'title': 'Naas manager',
         },
         'new_browser_tab': False,
