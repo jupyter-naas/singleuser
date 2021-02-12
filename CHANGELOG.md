@@ -1,3 +1,9 @@
+## 2.3.4 (2021-02-12)
+
+### Fix
+
+- use naas folder, instead of jupyter for naas assets
+
 ## 2.3.3 (2021-02-04)
 
 ### Fix
