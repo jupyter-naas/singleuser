@@ -68,6 +68,7 @@ RUN git config --global credential.helper store #Auto save git credentials
 
 RUN mkdir /etc/naas
 COPY jupyter_notebook_config.py /etc/naas/jupyter_notebook_config.py
+COPY welcome_workspace.json /etc/naas/welcome_workspace.json
 COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 COPY naas_logo.svg /etc/naas/naas_logo.svg
 COPY naas_logo_n.ico /etc/naas/naas_logo_n.ico
