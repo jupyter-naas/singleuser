@@ -1,3 +1,9 @@
+## 2.5.1 (2021-02-16)
+
+### Fix
+
+- remove naas config from here
+
 ## 2.5.0 (2021-02-16)
 
 ### Feat
