@@ -66,19 +66,6 @@ RUN apt-get update && \
 
 RUN git config --global credential.helper store #Auto save git credentials
 
-RUN mkdir /etc/naas
-COPY jupyter_notebook_config.py /etc/naas/jupyter_notebook_config.py
-COPY welcome_workspace.json /etc/naas/welcome_workspace.json
-COPY jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
-COPY naas_logo.svg /etc/naas/naas_logo.svg
-COPY naas_logo_n.ico /etc/naas/naas_logo_n.ico
-COPY naas_fav.svg /etc/naas/naas_fav.svg
-COPY custom.css /etc/naas/custom.css
-COPY overrides.json /opt/conda/share/jupyter/lab/settings/overrides.json
-COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/favicon.ico
-COPY naas_logo_n.ico /opt/conda/lib/python3.8/site-packages/notebook/static/base/images/favicon.ico
-RUN cat /etc/naas/custom.css >> /opt/conda/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
-
 RUN sed -i '6 i\export KERNEL_JUPYTER_SERVER_ROOT=${JUPYTER_SERVER_ROOT}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_API_TOKEN=${JUPYTERHUB_API_TOKEN}' /usr/local/bin/start-notebook.sh
