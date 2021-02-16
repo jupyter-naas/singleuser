@@ -30,6 +30,7 @@ RUN python3 -m pip install --no-cache \
     ipyparallel \
     ipywidgets \
     ipympl==0.5.8 \
+    jupyterlab-quickopen==0.5 \
     jupyter-server-proxy \
     jupyter-launcher-shortcuts \
     matplotlib==3.3.1 && \
