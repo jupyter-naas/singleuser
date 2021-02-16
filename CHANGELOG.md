@@ -1,3 +1,13 @@
+## 2.5.0 (2021-02-16)
+
+### Feat
+
+- add onboarding file path
+
+### Fix
+
+- css sidebar
+
 ## 2.4.1 (2021-02-16)
 
 ### Fix
