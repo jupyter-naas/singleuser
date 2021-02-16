@@ -1,3 +1,9 @@
+## 2.4.1 (2021-02-16)
+
+### Fix
+
+- add missing dependency for quick open
+
 ## 2.4.0 (2021-02-16)
 
 ### Feat
