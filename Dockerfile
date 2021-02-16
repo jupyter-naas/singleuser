@@ -35,6 +35,7 @@ RUN python3 -m pip install --no-cache \
     matplotlib==3.3.1 && \
     jupyter labextension install --no-build \
     @parente/jupyterlab-quickopen@0.5 \
+    @wallneradam/custom_css \
     spreadsheet-editor \
     jupyterlab-launcher-shortcuts \
     jupyterlab-execute-time \
