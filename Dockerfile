@@ -35,8 +35,9 @@ RUN python3 -m pip install --use-deprecated=legacy-resolver --no-cache \
     jupyterlab_widgets \
     jupyterlab-quickopen==1.0.0 \
     jupyterlab-execute-time \
+    python-language-server \
     elyra-python-editor-extension \
-    matplotlib==3.3.1 && \
+    matplotlib==3.3.4 && \
     jupyter labextension install --no-build \
     @jupyterlab/server-proxy \
     jupyterlab-plotly
