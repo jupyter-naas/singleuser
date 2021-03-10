@@ -1,9 +1,0 @@
-{
-    "@jupyterlab/notebook-extension:tracker": {
-        "recordTiming": true,
-        "kernelShutdown": true,
-        "codeCellConfig": {
-            "lineNumbers": true
-        }
-    }
-}
