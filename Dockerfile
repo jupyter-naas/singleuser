@@ -13,7 +13,7 @@ ENV NB_GROUP=21
 ENV PYTHONPATH=/home/pylib
 ENV TZ Europe/Paris
 USER root
-ENV VERSION 3.0.0
+ENV VERSION 2.6.0b0
 
 RUN mkdir /home/$NB_USER && \
     fix-permissions /home/$NB_USER
