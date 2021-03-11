@@ -21,7 +21,7 @@ RUN python3 -m pip install --use-feature=fast-deps --no-cache \
     jupyterlab-quickopen==1.0.0 \
     jupyterlab-execute-time==2.0.2 \
     python-language-server==0.36.2 \
-    elyra-python-editor-extension==2.0.1 \
+    jupyterlab-lsp==3.4.1 \
     matplotlib==3.3.4 && \
     jupyter labextension install --no-build \
     jupyterlab-spreadsheet \
