@@ -1,15 +1,7 @@
 FROM jupyter/minimal-notebook:latest
-ENV NB_UMASK=022
-ENV NB_USER=ftp
-ENV NB_UID=21
-ENV NB_GID=21
-ENV NB_GROUP=21
 ENV TZ Europe/Paris
 USER root
 ENV VERSION 2.6.0b0
-
-RUN mkdir /home/$NB_USER && \
-    fix-permissions /home/$NB_USER
 
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --use-feature=fast-deps --no-cache \
