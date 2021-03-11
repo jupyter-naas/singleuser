@@ -28,7 +28,7 @@ RUN python3 -m pip install --use-deprecated=legacy-resolver --no-cache \
     nbdime==$JUPYTERNBDIME_VERSION  \
     nbformat \
     nbconvert \
-    nbresuse \
+    jupyter-resource-usage \
     ipyparallel \
     ipywidgets \
     ipympl \
