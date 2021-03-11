@@ -13,6 +13,7 @@ RUN python3 -m pip install --no-cache \
     nbdime==3.0.0b1  \
     nbformat==5.1.2 \
     nbconvert==6.0.7 \
+    flake8==3.8.4 \
     jupyter-resource-usage==0.5.1 \
     ipyparallel==6.3.0 \
     ipywidgets==7.6.3 \
