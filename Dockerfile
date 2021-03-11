@@ -4,7 +4,7 @@ USER root
 ENV VERSION 2.6.0b0
 
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --use-feature=fast-deps --no-cache \
+RUN python3 -m pip install --no-cache \
     jupyterhub==1.3.0 \
     jupyterlab==3.0.10  \
     jupyter_client==6.1.11 \
