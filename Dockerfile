@@ -1,16 +1,9 @@
 FROM jupyter/minimal-notebook:latest
-ENV JUPYTERHUB_VERSION=1.3.0
-ENV JUPYTERLAB_VERSION=3.0.10
-ENV JUPYTERNBDIME_VERSION=3.0.0b1
-ENV JUPYTERCLIENT_VERSION=6.1.11
-ENV JUPYTERGIT_VERSION=0.30.0b2
-ENV JUPYTERSERVER_VERSION=1.5.3
 ENV NB_UMASK=022
 ENV NB_USER=ftp
 ENV NB_UID=21
 ENV NB_GID=21
 ENV NB_GROUP=21
-ENV PYTHONPATH=/home/pylib
 ENV TZ Europe/Paris
 USER root
 ENV VERSION 2.6.0b0
@@ -20,23 +13,23 @@ RUN mkdir /home/$NB_USER && \
 
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --use-feature=fast-deps --no-cache \
-    jupyterhub==$JUPYTERHUB_VERSION \
-    jupyterlab==$JUPYTERLAB_VERSION  \
-    jupyter_client==$JUPYTERCLIENT_VERSION  \
-    jupyter_server_proxy==$JUPYTERSERVER_VERSION \
-    jupyterlab-git==$JUPYTERGIT_VERSION \
-    nbdime==$JUPYTERNBDIME_VERSION  \
-    nbformat \
-    nbconvert \
-    jupyter-resource-usage \
-    ipyparallel \
-    ipywidgets \
-    ipympl \
-    jupyterlab_widgets \
+    jupyterhub==1.3.0 \
+    jupyterlab==3.0.10  \
+    jupyter_client==6.1.11 \
+    jupyter_server_proxy==1.5.3 \
+    jupyterlab-git==0.30.0b2 \
+    nbdime==3.0.0b1  \
+    nbformat==5.1.2 \
+    nbconvert==6.0.7 \
+    jupyter-resource-usage==0.5.1 \
+    ipyparallel==6.3.0 \
+    ipywidgets==7.6.3 \
+    ipympl==0.6.3 \
+    jupyterlab_widgets==1.0.0 \
     jupyterlab-quickopen==1.0.0 \
-    jupyterlab-execute-time \
-    python-language-server \
-    elyra-python-editor-extension \
+    jupyterlab-execute-time==2.0.2 \
+    python-language-server==0.36.2 \
+    elyra-python-editor-extension==2.0.1 \
     matplotlib==3.3.4 && \
     jupyter labextension install --no-build \
     jupyterlab-spreadsheet \
