@@ -19,7 +19,7 @@ RUN mkdir /home/$NB_USER && \
     fix-permissions /home/$NB_USER
 
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --use-deprecated=legacy-resolver --no-cache \
+RUN python3 -m pip install --use-feature=fast-deps --no-cache \
     jupyterhub==$JUPYTERHUB_VERSION \
     jupyterlab==$JUPYTERLAB_VERSION  \
     jupyter_client==$JUPYTERCLIENT_VERSION  \
