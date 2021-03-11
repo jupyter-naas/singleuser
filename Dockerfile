@@ -16,6 +16,9 @@ RUN python3 -m pip install --no-cache \
     flake8==3.8.4 \
     jupyter-resource-usage==0.5.1 \
     ipyparallel==6.3.0 \
+    jupyterlab-spellchecker==0.5.1 \
+    jupyter-archive==3.0.0 \
+    jupyterlab-tour==3.0.0 \
     ipywidgets==7.6.3 \
     ipympl==0.6.3 \
     jupyterlab_widgets==1.0.0 \
