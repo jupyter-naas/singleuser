@@ -1,4 +1,98 @@
+## 2.6.0b12 (2021-03-12)
+
+### Fix
+
+- remove bug changelog
+- add missing libs
+
+## 2.6.0b11 (2021-03-11)
+
+### Fix
+
+- changelog
+
+### Feat
+
+- add package for lab v3
+
+## 2.6.0b10 (2021-03-11)
+
+### Fix
+
+- eror in changelog
+- flake8
+
+## 2.6.0b9 (2021-03-11)
+
+### Fix
+
+- version for jhub
+
+## 2.6.0b8 (2021-03-11)
+
+### Fix
+
+- remove useless flag
+
+## 2.6.0b7 (2021-03-11)
+
+### Fix
+
+- remove elyra
+
+## 2.6.0b6 (2021-03-11)
+
+### Fix
+
+- dep errors
+
+## 2.6.0b5 (2021-03-11)
+
+### Fix
+
+- remove useless nass config
+
+## 2.6.0b4 (2021-03-11)
+
+### Fix
+
+- remove changelog
+- use fixed version
+- pip install
+
+## 2.6.0b3 (2021-03-11)
+
+### Fix
+
+- remove changelog
+- jupyter-resource-usage dep
+
+## 2.6.0b2 (2021-03-10)
+
+### Fix
+
+- changelog remove it
+- add missing spreadsheet
+
+## 2.6.0b1 (2021-03-10)
+
+### Fix
+
+- remove changelog broken
+- version link
+
+### Feat
+
+- add python-language-server for auto complete
+
+## 2.6.0b0 (2021-03-10)
+
+### Feat
+
+- use v3
+
 ## 2.5.1 (2021-02-16)
+
 
 ### Fix
 
@@ -67,6 +161,8 @@
 ### Fix
 
 - reactive jupyter-launcher-shortcuts
+
+## 2.1.2b22 (2021-01-19)
 
 ## 2.1.3 (2021-01-19)
 
