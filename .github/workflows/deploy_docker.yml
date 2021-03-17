@@ -56,9 +56,6 @@ jobs:
           repository: jupyter-naas/naas
           path: naas_repo
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} 
-      - id: get_version
-        uses: battila7/get-version-action@v2
-      - run: echo ${{ steps.get_version.outputs.version }}
       - run: sed -i 's_FROM jupyternaas/singleuser:.*$_FROM jupyternaas/singleuser:${{ steps.get-latest-tag.outputs.tag }}_' naas_repo/Dockerfile
       - run: 'cd naas_repo && git add setup.py && git commit -m "chore: update singleuser ${{ steps.get_version.outputs.version }}" && git push'
       - name: release kind
