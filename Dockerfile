@@ -8,7 +8,7 @@ RUN python3 -m pip install --no-cache \
     jupyterhub==1.3.0 \
     jupyterlab==3.0.10  \
     jupyter_client==6.1.11 \
-    jupyter_server_proxy==1.5.3 \
+    jupyter-server-proxy==3.0.2 \
     jupyterlab-git==0.30.0b2 \
     nbdime==3.0.0b1  \
     nbformat==5.1.2 \
