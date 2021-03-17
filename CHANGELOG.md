@@ -1,3 +1,9 @@
+## 2.6.1 (2021-03-17)
+
+### Fix
+
+- add ci step to update config file in naas repo
+
 ## 2.6.0 (2021-03-17)
 
 ### Fix
