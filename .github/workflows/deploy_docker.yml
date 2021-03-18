@@ -25,15 +25,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - id: get_version
-        uses: battila7/get-version-action@v2
-      - run: echo ${{ steps.get_version.outputs.version }}
       - name: Get smart tag
         id: prepare
         uses: jupyter-naas/docker-smart-tag-action@1.0.0
         with:
           ref: ${{ github.ref }}
           docker_image: jupyternaas/singleuser
+      - run: echo ${{ steps.prepare.outputs.tag }}
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
@@ -64,7 +62,7 @@ jobs:
         run: sed -i 's_FROM jupyternaas/singleuser:.*$_FROM jupyternaas/singleuser:${{ steps.get-latest-tag.outputs.tag }}_' naas_repo/Dockerfile
       - name: Push naas file
         if: ${{ steps.regex-match.outputs.match != '' }}
-        run: 'cd naas_repo && git add setup.py && git commit -m "chore: update singleuser ${{ steps.get_version.outputs.version }}" && git push'
+        run: 'cd naas_repo && git add setup.py && git commit -m "chore: update singleuser {{ steps.get-latest-tag.outputs.tag }}" && git push'
       - name: release kind
         id: release_kind
         run: |
