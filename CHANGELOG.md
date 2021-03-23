@@ -1,3 +1,9 @@
+## 2.7.0 (2021-03-23)
+
+### Feat
+
+- add missing lib for pupertter
+
 ## 2.6.9 (2021-03-18)
 
 ### Fix
