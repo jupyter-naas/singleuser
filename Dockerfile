@@ -36,7 +36,7 @@ RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --dev-build=False
 
 # add system packages
 RUN apt-get update && \
-    apt-get -y install redir libtesseract-dev libcairo2-dev
+    apt-get -y install redir libtesseract-dev libcairo2-dev libnss3
 
 RUN git config --global credential.helper store #Auto save git credentials
 
