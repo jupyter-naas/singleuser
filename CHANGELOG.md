@@ -1,3 +1,9 @@
+## 2.8.0 (2021-03-23)
+
+### Feat
+
+- add all lib for puperteer
+
 ## 2.7.0 (2021-03-23)
 
 ### Feat
