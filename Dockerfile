@@ -6,7 +6,7 @@ ENV VERSION 2.6.0b0
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --no-cache \
     jupyterhub==1.3.0 \
-    jupyterlab==3.0.10  \
+    jupyterlab==3.0.12  \
     jupyter_client==6.1.11 \
     jupyter-server-proxy==3.0.2 \
     jupyterlab-git==0.30.0b2 \
