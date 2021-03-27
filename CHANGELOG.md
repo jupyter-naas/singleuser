@@ -1,3 +1,10 @@
+## 2.10.0 (2021-03-27)
+
+### Feat
+
+- add cheagelog output changes
+- switch to requirements file
+
 ## 2.9.2 (2021-03-27)
 
 ### Fix
