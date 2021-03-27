@@ -7,7 +7,7 @@ nbdime==3.0.0b1
 xeus-python==0.12.1
 nbformat==5.1.2
 nbconvert==6.0.7
-flake8==3.8.4
+flake8==3.9.0
 jupyter-resource-usage==0.5.1
 ipyparallel==6.3.0
 jupyterlab-spellchecker==0.5.1
