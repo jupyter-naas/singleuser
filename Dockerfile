@@ -27,7 +27,7 @@ RUN python3 -m pip install --no-cache \
     jupyterlab-execute-time==2.0.2 \
     python-language-server==0.36.2 \
     jupyterlab-lsp==3.4.1 \
-    matplotlib==3.3.4 && \
+    matplotlib==3.4.0 && \
     jupyter labextension install --no-build \
     jupyterlab-spreadsheet \
     @jupyterlab/server-proxy \
