@@ -1,3 +1,9 @@
+## 2.9.2 (2021-03-27)
+
+### Fix
+
+- get last fix from jupyterlab 3
+
 ## 2.9.1 (2021-03-27)
 
 ### Fix
