@@ -3,6 +3,7 @@ ENV TZ Europe/Paris
 USER root
 ENV VERSION 2.6.0b0
 
+COPY requirements.txt requirements.txt
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --no-cache -r requirements.txt && \
     jupyter labextension install --no-build \
