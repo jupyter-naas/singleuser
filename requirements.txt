@@ -14,7 +14,7 @@ jupyterlab-spellchecker==0.5.1
 # jupyter-archive==3.0.0
 jupyterlab-tour==3.0.0
 ipywidgets==7.6.3
-ipympl==0.6.3
+ipympl==0.7.0
 jupyterlab_widgets==1.0.0
 jupyterlab-quickopen==1.0.0
 jupyterlab-execute-time==2.0.2
