@@ -1,3 +1,9 @@
+## 2.9.1 (2021-03-27)
+
+### Fix
+
+- update mathplotlib to latest version
+
 ## 2.9.0 (2021-03-25)
 
 ### Feat
