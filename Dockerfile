@@ -5,7 +5,7 @@ ENV VERSION 2.6.0b0
 
 COPY requirements.txt requirements.txt
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --no-cache -r requirements.txt && \
+RUN python3 -m pip install --no-cache-dir -r requirements.txt && \
     jupyter labextension install --no-build \
     jupyterlab-spreadsheet \
     @jupyterlab/server-proxy \
