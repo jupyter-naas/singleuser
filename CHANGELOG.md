@@ -1,3 +1,9 @@
+## 2.11.5 (2021-04-06)
+
+### Fix
+
+- get-changelog lastChanges
+
 ## 2.11.4 (2021-04-02)
 
 ### Fix
