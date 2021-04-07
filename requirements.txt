@@ -18,6 +18,6 @@ ipympl==0.7.0
 jupyterlab_widgets==1.0.0
 jupyterlab-quickopen==1.0.0
 jupyterlab-execute-time==2.0.2
-python-language-server==0.36.2
+jedi-language-server==0.30.2
 jupyterlab-lsp==3.5.0
 matplotlib==3.4.1
