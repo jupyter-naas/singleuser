@@ -1,7 +1,7 @@
 FROM jupyter/minimal-notebook:latest
 ENV TZ Europe/Paris
 USER root
-ENV VERSION 2.6.0b0
+ENV VERSION 2.11.9
 
 COPY requirements.txt requirements.txt
 RUN python3 -m pip install --upgrade pip
@@ -25,3 +25,4 @@ RUN git config --global credential.helper store #Auto save git credentials
 RUN sed -i '6 i\export KERNEL_JUPYTER_SERVER_ROOT=${JUPYTER_SERVER_ROOT}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin/start-notebook.sh
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_API_TOKEN=${JUPYTERHUB_API_TOKEN}' /usr/local/bin/start-notebook.sh
+USER $NB_UID
