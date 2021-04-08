@@ -4,7 +4,7 @@ jupyter_client==6.1.12
 jupyter-server-proxy==3.0.2
 jupyterlab-git==0.30.0b2
 nbdime==3.0.0b1
-xeus-python==0.12.1
+xeus-python==0.12.3
 nbformat==5.1.2
 nbconvert==6.0.7
 flake8==3.9.0
