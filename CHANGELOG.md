@@ -1,3 +1,9 @@
+## 2.11.13 (2021-04-08)
+
+### Fix
+
+- remove duplicated module for now
+
 ## 2.11.12 (2021-04-07)
 
 ### Fix
