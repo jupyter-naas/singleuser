@@ -9,7 +9,7 @@ RUN python3 -m pip install --no-cache-dir -r requirements.txt && \
     jupyter labextension install --no-build \
     jupyterlab-spreadsheet \
     @jupyterlab/server-proxy \
-    jupyterlab-plotly && rm -f requirements.txt work
+    jupyterlab-plotly && rm -f requirements.txt
 
 RUN NODE_OPTIONS=--max_old_space_size=6096 jupyter lab build --dev-build=False
 
