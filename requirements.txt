@@ -4,12 +4,12 @@ jupyter_client==6.1.12
 jupyter-server-proxy==3.0.2
 jupyterlab-git==0.30.0b2
 nbdime==3.0.0b1
-xeus-python==0.12.1
+# xeus-python==0.12.1
 nbformat==5.1.2
 nbconvert==6.0.7
 flake8==3.9.0
 jupyter-resource-usage==0.5.1
-ipyparallel==6.3.0
+# ipyparallel==6.3.0
 jupyterlab-spellchecker==0.5.2
 jupyter-archive==3.0.0
 jupyterlab-tour==3.0.0
