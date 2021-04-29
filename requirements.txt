@@ -20,5 +20,5 @@ jupyterlab-quickopen==1.0.0
 jupyterlab-execute-time==2.0.2
 jedi-language-server==0.30.2
 # python-language-server==0.36.2
-jupyterlab-lsp==3.5.0
+jupyterlab-lsp==3.6.0
 matplotlib==3.4.1
