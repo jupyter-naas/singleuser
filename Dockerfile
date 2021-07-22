@@ -27,6 +27,6 @@ RUN sed -i '6 i\export KERNEL_JUPYTERHUB_USER=${JUPYTERHUB_USER}' /usr/local/bin
 RUN sed -i '6 i\export KERNEL_JUPYTERHUB_API_TOKEN=${JUPYTERHUB_API_TOKEN}' /usr/local/bin/start-notebook.sh
 
 # Allow users to install extensions.
-RUN chown -r $NB_UID:$NB_UID /opt/conda/share/jupyter/lab/extensions
+RUN chown $NB_UID:$NB_UID /opt/conda/share/jupyter/lab/extensions
 
 USER $NB_UID
