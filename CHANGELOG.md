@@ -1,3 +1,9 @@
+## 2.11.17b1 (2021-07-22)
+
+### Fix
+
+- **Jupyter-Extensions**: Allow users tto install new ones
+
 ## 2.11.17b0 (2021-07-22)
 
 ### Fix
