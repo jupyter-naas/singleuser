@@ -1,3 +1,9 @@
+## 2.11.17b0 (2021-07-22)
+
+### Fix
+
+- **Dependencies**: bump jupyter-hub/lab and nbdime
+
 ## 2.11.16 (2021-04-29)
 
 ### Fix
