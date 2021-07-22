@@ -1,3 +1,9 @@
+## 2.11.17b2 (2021-07-22)
+
+### Fix
+
+- **Dockerfile**: Fix chown command in Dockerfile
+
 ## 2.11.17b1 (2021-07-22)
 
 ### Fix
