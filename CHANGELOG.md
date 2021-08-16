@@ -1,3 +1,9 @@
+## 2.11.17b3 (2021-08-16)
+
+### Refactor
+
+- disable the jupyterlab tour
+
 ## 2.11.17b2 (2021-07-22)
 
 ### Fix
