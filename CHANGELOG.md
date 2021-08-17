@@ -1,3 +1,9 @@
+## 2.11.19 (2021-08-17)
+
+### Fix
+
+- **jupyter/minimal-notebook-version**: Fix to 4d9c9bd9ced0
+
 ## 2.11.18 (2021-08-17)
 
 ### Fix
