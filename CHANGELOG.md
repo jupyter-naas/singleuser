@@ -1,3 +1,33 @@
+## 2.11.20b0 (2021-11-19)
+
+### Fix
+
+- **Dependency**: Build latest
+
+## 2.11.17b3 (2021-08-16)
+
+### Refactor
+
+- disable the jupyterlab tour
+
+## 2.11.17b2 (2021-07-22)
+
+### Fix
+
+- **Dockerfile**: Fix chown command in Dockerfile
+
+## 2.11.17b1 (2021-07-22)
+
+### Fix
+
+- **Jupyter-Extensions**: Allow users tto install new ones
+
+## 2.11.17b0 (2021-07-22)
+
+### Fix
+
+- **Dependencies**: bump jupyter-hub/lab and nbdime
+
 ## 2.11.19 (2021-08-17)
 
 ### Fix
