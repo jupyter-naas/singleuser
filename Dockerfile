@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:4d9c9bd9ced0
+FROM jupyter/minimal-notebook:latest
 ENV TZ Europe/Paris
 USER root
 ENV VERSION 2.11.9
