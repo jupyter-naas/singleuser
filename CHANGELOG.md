@@ -1,20 +1,20 @@
-## 2.11.17b2 (2021-07-22)
+## 2.11.19 (2021-08-17)
 
 ### Fix
 
-- **Dockerfile**: Fix chown command in Dockerfile
+- **jupyter/minimal-notebook-version**: Fix to 4d9c9bd9ced0
 
-## 2.11.17b1 (2021-07-22)
-
-### Fix
-
-- **Jupyter-Extensions**: Allow users tto install new ones
-
-## 2.11.17b0 (2021-07-22)
+## 2.11.18 (2021-08-17)
 
 ### Fix
 
-- **Dependencies**: bump jupyter-hub/lab and nbdime
+- **Dependency**: Bump nbdime
+
+## 2.11.17 (2021-08-16)
+
+### Refactor
+
+- disable the jupyterlab tour
 
 ## 2.11.16 (2021-04-29)
 
