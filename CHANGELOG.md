@@ -1,3 +1,13 @@
+## 2.12.0 (2022-02-18)
+
+### Feat
+
+- Build ARM version as well
+
+### Fix
+
+- Bump jupyterlab 3.0.16
+
 ## 2.11.19 (2021-08-17)
 
 ### Fix
