@@ -1,7 +1,9 @@
-FROM jupyter/minimal-notebook:4d9c9bd9ced0
+FROM jupyter/minimal-notebook:lab-3.0.16
 ENV TZ Europe/Paris
 USER root
 ENV VERSION 2.11.9
+
+RUN apt update && apt install --yes build-essential
 
 COPY requirements.txt requirements.txt
 RUN python3 -m pip install --upgrade pip
